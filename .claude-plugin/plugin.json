@@ -1,0 +1,22 @@
+{
+  "name": "prompt-improver",
+  "version": "0.1.0",
+  "description": "Attaches a short reading rubric beside each typed prompt so Claude resolves vague asks against the conversation before acting.",
+  "author": { "name": "Daniel Tzeel-Krupp" },
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "minWords": {
+      "type": "number",
+      "title": "Minimum words",
+      "description": "Prompts with fewer words than this are left alone (acknowledgements like \"ok\", \"y\").",
+      "default": 4
+    },
+    "maxWords": {
+      "type": "number",
+      "title": "Maximum words",
+      "description": "Prompts with more words than this are left alone (they are already explicit).",
+      "default": 40
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "prompt-improver",
+  "description": "A Claude Code mod that reads terse prompts against the conversation before acting.",
+  "owner": { "name": "Daniel Tzeel-Krupp" },
+  "plugins": [{ "name": "prompt-improver", "source": "./" }]
+}
